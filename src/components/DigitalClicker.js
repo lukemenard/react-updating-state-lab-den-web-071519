@@ -4,7 +4,7 @@ export default class DigitalClicker extends Component {
   constructor(){
     super()
     this.state = {
-      timesClicked = 0
+      timesClicked: 0
     }
   }
 
@@ -15,7 +15,7 @@ export default class DigitalClicker extends Component {
   render() {
     return(
       <button onClick={this.handleClick}>
-        Times Clicked: `${this.timesClicked}`
+        {this.timesClicked}
       </button>
     )
   }
